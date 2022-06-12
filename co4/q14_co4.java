@@ -1,29 +1,19 @@
-package co4;
-import java.util.*;
+package oopslab;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class q14_co4 {
-public static void main(String args[]) {
-	Deque<String>deque=new LinkedList<String>();
-	
-    deque.add("Element 1 (Tail)");
 
-    deque.addFirst("Element 2 (Head)");
-
-    deque.addLast("Element 3 (Tail)");
-
-    deque.push("Element 4 (Head)");
-
-    
-    deque.offer("Element 5 (Tail)");
-
-    
-    deque.offerFirst("Element 6 (Head)");
-
-    System.out.println(deque + "\n");
-
-    deque.removeFirst();
-    deque.removeLast();
-    System.out.println("Deque after removing "
-                       + "first and last: "
-                       + deque);
-}
+	public static void main(String args[])
+	{
+		Deque<Integer> deq=new LinkedList<Integer>();
+		deq.add(21);
+		deq.add(32);
+		deq.addFirst(55);
+		deq.addLast(78);
+		deq.offerFirst(99);
+		deq.offerLast(100);
+		System.out.println(deq);
+	}
 }
